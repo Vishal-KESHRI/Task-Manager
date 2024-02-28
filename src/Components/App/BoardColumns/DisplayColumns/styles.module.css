@@ -1,0 +1,80 @@
+.columns{
+    margin: 24px 0px 0px 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.message{
+    text-align: center;
+    font-family: var(--font-jakarta);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--task-title-color);
+}
+
+.column{
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column_title{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-medium-font-size);
+    font-weight: var(--body-medium-font-weight);
+    line-height: var(--body-medium-line-height);
+    letter-spacing: 2.4px;
+    color: #828FA3;
+    display: flex;
+    gap: 12px;
+    text-transform: uppercase;
+}
+
+.dot{
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+
+div.column:nth-child(1) .column_title .dot,
+div.column:nth-child(4) .column_title .dot{
+    background-color: #49C4E5;
+}
+
+
+div.column:nth-child(2) .column_title .dot,
+div.column:nth-child(5) .column_title .dot{
+    background-color: #8471F2;
+}
+
+div.column:nth-child(3) .column_title .dot{
+    background-color: #67E2AE;
+}
+
+
+.addNewColumnButton{
+    cursor: pointer;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 280px;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #828FA3;
+    font-family: var(--font-jakarta);
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    background: var(--add-new-column-button-bg);    
+    border-radius: 6px;
+}
+
+.addNewColumnButton:hover{
+    color: #635FC7;
+}

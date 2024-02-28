@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'plus jakarta';
+    src: url('./FontFiles/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+*{
+    transition: all 0.2s linear;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+fieldset{
+    border: none;
+}
+
+:root{
+    --body-bg: #F4F7FD;
+
+    --sidebar-bg: white;
+    --sidebar-switch-box: #F4F7FD;
+    --sidebar-button-hover-bg: rgba(99, 95, 199, 0.1);
+    --sidebar-border-color: #E4EBFA;
+    --dialog-bg-color: white;
+    --dialog-popup-bg: white;  
+    --dialog-popup-box-shadow: 0px 10px 20px rgba(54, 78, 126, 0.25);
+    --dialog-input-text-color: #000112;
+    --dialog-placeholder-text-color: rgba(255, 255, 255, 0.25);
+    --dialog-input-bg-color: white;
+    --dialog-add-button: rgba(99, 95, 199, 0.1);
+    --dialog-hover-add-button: rgba(99, 95, 199, 0.25);
+    --dialog-title-text-color: #000112;
+    --dialog-label-text-color: #828FA3;
+    --dialog-check-box-bg-color: #F4F7FD;
+    --dialog-check-box-square-bg: white;        /* i need to figure out how to change the background on an unchecked box*/
+
+    --task-box-bg-color: white;
+    --task-title-color: #000112;
+    --add-new-column-button-bg: linear-gradient(180deg, #E9EFFA 0%, rgba(233, 239, 250, 0.5) 100%);
+
+    --header-bg-color: white;
+    --header-title-text-color: #000112;
+    --header-border-color: #E4EBFA;
+
+    --closest: 50;
+    --close: 40;
+    --farthest: 10;
+
+    --font-jakarta: 'plus jakarta';
+    --h1-font-size: 24px;
+    --h1-font-weight: 700;
+    --h1-line-height: 30px;
+
+    --h2-font-size: 18px;
+    --h2-font-weight: 700;
+    --h2-line-height: 23px;
+
+    --h3-font-size: 15px;
+    --h3-font-weight: 700;
+    --h3-line-height: 19px;
+
+    --h4-font-size: 12px;
+    --h4-font-weight: 700;
+    --h4-line-height: 15px;
+    --h4-letter-spacing: 2.4px;
+
+    --body-large-font-size: 13px;
+    --body-large-font-weight: 500;
+    --body-large-line-height: 23px;
+
+    --body-medium-font-size: 12px;
+    --body-medium-font-weight: 700;
+    --body-medium-line-height: 15.12px;
+}
+
+html{
+    height: 100vh;
+}
+body{
+    background-color: var(--body-bg);
+    height: 100vh;
+    overflow: hidden;
+}
+
+input{
+    background-color: var(--dialog-input-bg-color);
+    transition: none;
+}
+

@@ -1,0 +1,33 @@
+
+.column_task{
+    min-height: 88px;
+    background-color: var(--task-box-bg-color);
+    padding: 23px 16px 23px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(54, 78, 126, 0.0101545);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.column_task:hover > h3{
+    color:#635FC7;
+}
+
+.column_task_title{
+    font-family: var(--font-jakarta);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height);
+    color: var(--task-title-color);
+}
+
+.column_task_subtasks{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-medium-font-size);
+    font-weight: var(--body-medium-font-weight);
+    line-height: var(--body-medium-line-height);
+    color: #828FA3;
+}
+

@@ -1,0 +1,60 @@
+.container{
+    position: relative;
+}
+
+.clickArea{
+    width: 20px;
+    display: grid;
+    place-items: center;
+    height: 20px;
+    cursor: pointer;
+}
+
+.threeDotsIcon{
+    height: 20px;
+    object-fit: contain;
+}
+
+.popup{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    background-color: var(--dialog-popup-bg);
+    width: 192px;
+    height: 94px;
+    padding: 16px;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: var(--dialog-popup-box-shadow);
+}
+
+.popup_option{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-family: var(--font-jakarta);
+    line-height: 23px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.popup_option:hover{
+    text-decoration: underline;
+}
+
+.popup_option:first-child{
+    color: #828FA3;
+}
+
+.popup_option:last-child{
+    color: #EA5555;
+}
+
+@media(max-width: 560px){
+    .popup{
+        width: 150px;
+    }
+}

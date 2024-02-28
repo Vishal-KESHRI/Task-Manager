@@ -1,0 +1,10 @@
+.container{
+    margin-right: 15px;
+}
+
+.icon{
+    width: 18px;
+    object-fit: contain;
+    fill: #828FA3;
+    margin-right: 15px;
+}

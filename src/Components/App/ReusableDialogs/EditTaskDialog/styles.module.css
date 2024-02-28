@@ -1,0 +1,54 @@
+
+.dialogTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialogTitle_title{
+    font-family: var(--font-jakarta);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-height);
+    color: var(--dialog-title-text-color);
+    width: 380px;
+}
+
+.dialogContent{
+    width: 480px;
+}
+
+.dialogContent_desc{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    color: #828FA3;
+    margin-bottom: 24px;
+}
+
+.dialogContent_subtasksCompleted{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-medium-font-size);
+    font-weight: var(--body-medium-font-weight);
+    line-height: var(--body-medium-line-height);
+    color: var(--dialog-label-text-color);
+    margin-bottom: 16px;
+}
+
+.dialogContent_subtasks{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+@media(max-width: 560px) {
+    .dialogContent{
+        width: 343px;
+    }
+
+    .dialogTitle_title{
+        width: 274px;
+    }
+}   

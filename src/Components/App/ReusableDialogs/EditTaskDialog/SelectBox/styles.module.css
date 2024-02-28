@@ -1,0 +1,72 @@
+.selectBox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.selectBox_label{
+    font-family: var(--font-jakarta);
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-font-weight);
+    line-height: var(--h4-line-height);
+    color: var(--dialog-label-text-color);
+}
+
+.selectBox_select{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    border: 1px solid rgba(130, 143, 163, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    background-color: var(--dialog-input-bg-color);
+    color: var(--dialog-input-text-color);
+}
+
+.selectBox_select:hover{
+    border: 1px solid #635FC7;
+}
+
+.selectBox_popup{
+    position: absolute;
+    z-index: var(--closest);
+    top: 70px;
+    width: 416px;
+    background-color: var(--dialog-popup-bg);
+    box-shadow: var(--dialog-popup-box-shadow);
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.selectBox_option{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    color:  #828FA3;
+    cursor: pointer;
+}
+
+.selectBox_option:hover{
+    color:#635FC7
+}
+
+.arrowDown{
+    width: 10px;
+    object-fit: contain;
+}
+
+@media(max-width: 560px){
+    .selectBox_popup{
+        width: 279px;
+    }
+}

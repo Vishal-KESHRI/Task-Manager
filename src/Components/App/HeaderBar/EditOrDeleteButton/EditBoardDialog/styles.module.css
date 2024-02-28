@@ -1,0 +1,58 @@
+.editBoard_button{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    cursor: pointer;
+    color: #828FA3;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+}
+
+
+.editBoard_button:hover{
+    text-decoration: underline;
+}
+
+
+.editBoard_button:disabled{
+    color: rgba(130, 143, 163, 0.3)
+}
+
+.dialogTitle_title{
+    font-family: var(--font-jakarta);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-height);
+    color: var(--dialog-title-text-color);
+}
+
+.dialogContent{
+    width: 480px;
+}
+
+.dialogContent_submit{
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: #635FC7;
+    border-radius: 20px;
+    color: white;
+    font-family: var(--font-jakarta);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 23px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.dialogContent_submit:hover{
+    background-color: #A8A4FF;
+}
+
+@media(max-width: 560px){
+    .dialogContent{
+        width: 343px;
+    }
+} 

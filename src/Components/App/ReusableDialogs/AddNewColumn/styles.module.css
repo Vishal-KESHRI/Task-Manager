@@ -1,0 +1,49 @@
+.dialogTitle_title{
+    font-family: var(--font-jakarta);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-height);
+    color: var(--dialog-title-text-color);
+}
+
+.dialogContent_buttons{
+    display: flex;
+    gap: 16px;
+}
+
+.dialogContent_submitButton, .dialogContent_cancelButton{
+    font-family: var(--font-jakarta);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 23px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.dialogContent_submitButton{
+    color: white;
+    background-color: #635FC7;    
+}
+
+.dialogContent_cancelButton{
+    color: #635FC7;
+    background-color: var(--dialog-add-button);
+}
+
+.dialogContent_cancelButton:hover{
+    background-color: var(--dialog-hover-add-button);
+}
+
+
+.dialogContent_submitButton:hover{
+    background-color: #A8A4FF;
+}
+
+@media(max-width: 560px){
+    .dialogContent_buttons{
+        flex-direction: column;
+    }
+}

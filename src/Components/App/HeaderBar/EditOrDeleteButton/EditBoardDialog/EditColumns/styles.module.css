@@ -1,0 +1,107 @@
+.allColumns{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.allColumns_title{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-medium-font-size);
+    font-weight: var(--body-medium-font-weight);
+    line-height: var(--body-medium-line-height);
+    color: var(--dialog-label-text-color);
+}
+
+.allColumns_columns{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.allColumns_addColumnButton{
+    height: 40px;
+    background-color: var(--dialog-add-button);
+    border-radius: 20px;
+    border: none;
+    font-family: var(--font-jakarta);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #635FC7;
+    cursor: pointer;
+}
+
+.allColumns_addColumnButton:hover{
+    background-color: var(--dialog-hover-add-button);
+}
+
+
+.inputContainer{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.inputContainer_fieldset{
+    position: relative;
+}
+
+.inputContainers_input{
+    width: 385px;
+    height: 40px;
+    border: 1px solid rgba(130, 143, 163, 0.25);
+    border-radius: 4px;
+    padding-left: 16px;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    color: var(--dialog-input-text-color);
+}
+
+.inputContainer_emptyMessage{
+    display: none;
+    height: 23px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #EA5555;
+    font-family: var(--font-jakarta);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.inputContainers_input:hover{
+    border: 1px solid #635FC7;
+}
+
+.inputContainers_input:focus{
+    outline: none;
+    border: 2px solid #635FC7;
+}
+
+.inputContainer_closeIcon{
+    flex-shrink: 0;
+    flex-grow: 0;
+    mask: url('./icons/icon-cross.svg');
+    -webkit-mask: url('./icons/icon-cross.svg');
+    width: 15px;
+    height: 15px;
+    background-color: #828FA3;
+    cursor: pointer;
+}
+
+.inputContainer_closeIcon:hover {
+    background-color: #EA5555;
+}
+
+@media(max-width: 560px){
+    .inputContainers_input{
+        width: 264px;
+    }
+}

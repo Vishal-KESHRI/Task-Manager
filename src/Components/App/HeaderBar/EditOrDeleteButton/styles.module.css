@@ -1,0 +1,40 @@
+.selectBox{
+    position: relative;
+}
+
+.clickArea{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.selectBox_popup{
+    position: absolute;
+    right: 0px;
+    bottom: -120px;
+    z-index: var(--close);
+    background-color: var(--dialog-popup-bg);
+    width: 192px;
+    height: 94px;
+    box-shadow: var(--dialog-popup-box-shadow);
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+.selectBox_threeDots_button{
+    height: 20px;
+    object-fit: contain;
+}
+
+
+@media(max-width: 780px){
+    .selectBox_threeDots_button, .clickArea{
+        height: 16px;
+    }
+}

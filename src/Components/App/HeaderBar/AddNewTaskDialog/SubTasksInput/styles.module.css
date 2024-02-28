@@ -1,0 +1,112 @@
+.inputContainer, .inputContainer_subtasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset{
+    position: relative;
+}
+
+.inputContainer{
+    gap: 8px;
+}
+
+.inputContainer_title{
+    font-family: var(--font-jakarta);
+    font-size: 12px;
+    line-height: 15.12px;
+    font-weight: 700;
+    color: var(--dialog-label-text-color)
+}
+
+.inputContainer_subtasks{
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.inputContainer_subtask{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.inputContainer_subtask_input{
+    width: 385px;
+    height: 40px;
+    border: 1px solid rgba(130, 143, 163, 0.25);
+    border-radius: 4px;
+    padding-left: 16px;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    color: var(--dialog-input-text-color);
+}
+
+.inputContainer_subtask_input:hover{
+    border: 1px solid #635FC7;
+}
+
+.inputContainer_subtask_input:focus{
+    outline: none;
+    border: 2px solid #635FC7;
+}
+
+.inputContainer_subtask_input::placeholder{
+    color: var(--dialog-placeholder-text-color);
+}
+
+.inputContainer_subtask_closeIcon{
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    mask: url('./icons/icon-cross.svg');
+    -webkit-mask: url('./icons/icon-cross.svg');
+    background-color: #828FA3;
+    cursor: pointer;
+}
+.inputContainer_subtask_closeIcon:hover{
+    background-color: #EA5555;
+}
+
+
+.emptyMessage{
+    display: none;
+    width: 97px;
+    height: 23px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    color: #EA5555;
+}
+
+.inputContainer_addButton{
+    height: 40px;
+    background-color: var(--dialog-add-button);
+    color: #635FC7;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-jakarta);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 24px;
+}
+
+.inputContainer_addButton:hover{
+    background-color: var(--dialog-hover-add-button);
+}
+
+@media(max-width: 560px) {
+    .inputContainer_subtask_input{
+        width: 264px;
+    }
+}

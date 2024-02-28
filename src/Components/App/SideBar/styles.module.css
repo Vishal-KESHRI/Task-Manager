@@ -1,0 +1,116 @@
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32.78px 0px 32px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: var(--closest);
+    border-right: 1px solid var(--sidebar-border-color);
+}
+
+.sidebar_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.sidebar_logo{
+    width: 152.53px;
+    object-fit: contain;
+    margin-left: 34px;
+}
+
+.sidebar_boards{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_bottom{
+    width: 251px;
+}
+
+.sidebar_hideShowButton{
+    width: 276px;
+    height: 48px;
+    padding-left: 31px;
+    border-radius: 0px 100px 100px 0px;
+    border: none;
+    background-color: transparent;
+    font-family: var(--font-jakarta);
+    font-weight: var(--h3-font-weight);
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+    color:  #828FA3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_hideShowButton:hover{
+    background-color: var(--sidebar-button-hover-bg);
+    color: rgb(99, 95, 199);
+}
+
+.visibilityButton{
+    border: none;
+    width: 56px;
+    height: 48px;
+    border-radius: 0px 100px 100px 0px;
+    background-color: #635FC7;
+    position: absolute;
+    left: 0px;
+    bottom: 32px;
+    z-index: var(--farthest);
+    cursor: pointer;
+}
+
+.visibilityButton:hover{
+    background-color: #A8A4FF;
+}
+
+.sidebar_addBoardButton{
+    border: none;
+    background-color: transparent;
+    color: #635FC7;
+    cursor: pointer;
+    font-family: var(--font-jakarta);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height);
+    width: 276px;
+    height: 48px;
+    text-align: initial;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer{
+    margin: 3px 16px 0px 0px;
+}
+
+.icon{
+    fill: #635FC7;
+}
+
+
+@media(max-width: 1000px){
+    .sidebar{
+        width: 261px;
+    }
+    .sidebar_addBoardButton{
+        padding-left: 16px;
+    }
+
+    .sidebar_hideShowButton{
+        padding-left: 24px;
+        width: 232px;
+    }
+}
+

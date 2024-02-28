@@ -1,0 +1,117 @@
+.column_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.column_container{
+    min-height: 100px;
+}
+
+.column_label{
+    font-family: var(--font-jakarta);
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-font-weight);
+    line-height: var(--h4-line-height);
+    color: var(--dialog-label-text-color);
+}
+
+.column_allColumns{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 4px;
+    min-height: 40px
+}
+
+
+.column_addButton{
+    height: 40px;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: 700;
+    line-height: var(--body-large-line-height);
+    border-radius: 20px;
+    border: none;
+    background-color: var(--dialog-add-button);
+    color: #635FC7;
+    cursor: pointer;
+}
+
+.column_addButton:hover{
+    background-color: var(--dialog-hover-add-button);
+}
+
+.input_container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.input_fieldset{
+    position: relative;
+}
+
+.input{
+    width: 385px;
+    height: 40px;
+    border: 1px solid rgba(130, 143, 163, 0.25);
+    border-radius: 4px;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    padding-left: 16px;
+    color: var(--dialog-input-text-color);
+}
+
+input::placeholder{
+    color: var(--dialog-placeholder-text-color);
+}
+
+.input:hover{
+    border: 1px solid #635FC7;
+}
+
+.input:focus{
+    outline: none;
+    border: 2px solid #635FC7;
+}
+.input_close{
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 15px;
+    height: 15px;
+    mask: url('./icons/icon-cross.svg');
+    -webkit-mask: url('./icons/icon-cross.svg');
+    cursor: pointer;
+    background-color: #828FA3;
+}
+
+.input_close:hover{
+    background-color: #EA5555;
+}
+
+.emptyMessage{
+    display: none;
+    width: 97px;
+    height: 23px;
+    color: #EA5555;
+    font-family: var(--font-jakarta);
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 500;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media(max-width: 560px){
+    .input{
+        width: 264px;
+    }
+}

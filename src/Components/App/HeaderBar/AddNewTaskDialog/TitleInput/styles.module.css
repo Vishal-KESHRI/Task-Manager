@@ -1,0 +1,60 @@
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+
+.inputContainer_input{
+    width: 100%;
+    height: 40px;
+    color: var(--dialog-input-text-color);
+    background-color: var(--dialog-input-bg-color);
+    padding-left: 16px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.inputContainer_input::placeholder{
+    color: var(--dialog-placeholder-text-color);
+}
+
+.inputContainer_label{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-medium-font-size);
+    font-weight: var(--body-medium-font-weight);
+    line-height: var(--body-medium-line-height);
+    color: var(--dialog-label-text-color);
+}
+
+
+.inputContainer_input:hover{
+    border: 1px solid #635FC7;
+}
+
+.inputContainer_input:focus{
+    outline: none;
+    border: 2px solid #635FC7;
+}
+
+.inputContainer_input{
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    border: 1px solid rgba(130, 143, 163, 0.25);
+}
+
+.emptyMessage{
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #EA5555;
+    font-family: var(--font-jakarta);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+}
